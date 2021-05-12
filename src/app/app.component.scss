@@ -10,6 +10,16 @@
     justify-content: space-around;
 }
 
+.comp {
+    display: flex;
+    flex-direction: column;
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+    }
+}
+
 .example-radio-group {
     display: flex;
     flex-direction: column;

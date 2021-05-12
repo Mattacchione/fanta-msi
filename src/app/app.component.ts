@@ -277,4 +277,8 @@ export class AppComponent {
     }
   }
 
+  copy() {
+    return String(this.comp.top?.player) + ' ' + String(this.comp.jungle?.player) + ' ' + String(this.comp.mid?.player) + ' ' + String(this.comp.adc?.player) + ' ' + String(this.comp.supp?.player) + ' ' + String(this.comp.coach?.player)
+  }
+
 }

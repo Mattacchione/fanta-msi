@@ -64,11 +64,16 @@
     </div>
   </div>
 
-  <div>
-    <span>La tua comp è: {{comp.top?.player}} - {{comp.jungle?.player}} - {{comp.mid?.player}} - {{comp.adc?.player}} -
-      {{comp.supp?.player}} -
-      {{comp.coach?.player}}</span>
-    <button mat-raised-button color="primary" (click)="verifyComp()">Verifica</button>
+  <div class="comp">
+    <span>La tua comp è:
+      <span id="copy-comp">{{comp.top?.player}} - {{comp.jungle?.player}} - {{comp.mid?.player}} - {{comp.adc?.player}} -
+        {{comp.supp?.player}} -
+        {{comp.coach?.player}}</span>
+    </span>
+    <div>
+      <button mat-raised-button color="primary" (click)="verifyComp()">Verifica</button>
+      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()">Copia formazione</button>
+    </div>
   </div>
 
 
