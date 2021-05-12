@@ -3,7 +3,7 @@
     <h1>FANTA MSI</h1>
   </div>
 
-  <div>
+  <div [ngClass]="calculateCredit() >= 0 ? 'valid' : 'not-valid'">
     <h2>Crediti disponibili {{calculateCredit()}}</h2>
   </div>
 
