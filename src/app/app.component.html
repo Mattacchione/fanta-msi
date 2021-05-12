@@ -10,7 +10,7 @@
   <div class="pool">
     <div>
       <label id="example-radio-group-label">Scegli il Toplaner</label>
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.top">
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.top" (change)="verifyComp()">
         <mat-radio-button class="example-radio-button" *ngFor="let topOption of playerPoolTop" [value]="topOption">
           {{topOption.player}} - {{topOption.team}} - {{topOption.value}}
         </mat-radio-button>
@@ -20,7 +20,7 @@
     <div>
       <label id="example-radio-group-label">Scegli il Jungler</label>
       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-        [(ngModel)]="comp.jungle">
+        [(ngModel)]="comp.jungle" (change)="verifyComp()">
         <mat-radio-button class="example-radio-button" *ngFor="let jngOption of playerPoolJng" [value]="jngOption">
           {{jngOption.player}} - {{jngOption.team}} - {{jngOption.value}}
         </mat-radio-button>
@@ -29,7 +29,7 @@
 
     <div>
       <label id="example-radio-group-label">Scegli il Midlaner</label>
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.mid">
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.mid" (change)="verifyComp()">
         <mat-radio-button class="example-radio-button" *ngFor="let midOption of playerPoolMid" [value]="midOption">
           {{midOption.player}} - {{midOption.team}} - {{midOption.value}}
         </mat-radio-button>
@@ -38,7 +38,7 @@
 
     <div>
       <label id="example-radio-group-label">Scegli l'Adc</label>
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.adc">
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.adc" (change)="verifyComp()">
         <mat-radio-button class="example-radio-button" *ngFor="let adcOption of playerPoolAdc" [value]="adcOption">
           {{adcOption.player}} - {{adcOption.team}} - {{adcOption.value}}
         </mat-radio-button>
@@ -47,7 +47,7 @@
 
     <div>
       <label id="example-radio-group-label">Scegli il Support</label>
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.supp">
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.supp" (change)="verifyComp()">
         <mat-radio-button class="example-radio-button" *ngFor="let suppOption of playerPoolSupp" [value]="suppOption">
           {{suppOption.player}} - {{suppOption.team}} - {{suppOption.value}}
         </mat-radio-button>
@@ -56,7 +56,7 @@
 
     <div>
       <label id="example-radio-group-label">Scegli il Coach</label>
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.coach">
+      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.coach" (change)="verifyComp()">
         <mat-radio-button class="example-radio-button" *ngFor="let coachOption of playerPoolCoach" [value]="coachOption">
           {{coachOption.player}} - {{coachOption.team}} - {{coachOption.value}}
         </mat-radio-button>
@@ -70,8 +70,8 @@
         {{comp.coach?.player}}
     </h3>
     <div>
-      <button mat-raised-button color="primary" (click)="verifyComp()">Verifica</button>
-      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()" [disabled]="validComp">Copia formazione</button>
+      <!-- <button mat-raised-button color="primary" (click)="verifyComp()">Verifica</button> -->
+      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()">Copia formazione</button>
     </div>
   </div>
 

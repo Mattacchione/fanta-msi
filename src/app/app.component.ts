@@ -228,6 +228,10 @@ export class AppComponent {
   ngOnInit(): void {
   }
 
+  completedComp() {
+    return !!this.comp.top?.value && !!this.comp.jungle?.value && !!this.comp.mid?.value && !!this.comp.adc?.value && !!this.comp.supp?.value && !!this.comp.coach?.value
+  }
+
   calculateCredit() {
     const top = this.comp.top?.value ? this.comp.top?.value : 0
     const jungle = this.comp.jungle?.value ? this.comp.jungle?.value : 0
@@ -240,40 +244,42 @@ export class AppComponent {
   }
 
   verifyComp() {
-    if (this.calculateCredit() <= 135 && this.calculateCredit() > 0) {
-      let rng = 0, mad = 0, dw = 0, c9 = 0, psg = 0, pgg = 0
-      for (const [key, value] of Object.entries(this.comp)) {
-        if (key !== 'coach') {
-          switch (value['team']) {
-            case 'RNG':
-              rng++
-              break;
-            case 'MAD':
-              mad++
-              break;
-            case 'DW':
-              dw++
-              break;
-            case 'C9':
-              c9++
-              break;
-            case 'PSG':
-              psg++
-              break;
-            case 'PGG':
-              pgg++
-              break;
+    if (this.completedComp()) {
+      if (this.calculateCredit() <= 135 && this.calculateCredit() >= 0) {
+        let rng = 0, mad = 0, dw = 0, c9 = 0, psg = 0, pgg = 0
+        for (const [key, value] of Object.entries(this.comp)) {
+          if (key !== 'coach') {
+            switch (value['team']) {
+              case 'RNG':
+                rng++
+                break;
+              case 'MAD':
+                mad++
+                break;
+              case 'DW':
+                dw++
+                break;
+              case 'C9':
+                c9++
+                break;
+              case 'PSG':
+                psg++
+                break;
+              case 'PGG':
+                pgg++
+                break;
+            }
           }
         }
-      }
-      if (rng > 2 || mad > 2 || dw > 2 || c9 > 2 || psg > 2 || pgg > 2) {
-        this.validComp = false
+        if (rng > 2 || mad > 2 || dw > 2 || c9 > 2 || psg > 2 || pgg > 2) {
+          this.validComp = false
+        } else {
+          this.validComp = true
+        }
       } else {
-        this.validComp = true
+        console.log('value false')
+        this.validComp = false
       }
-    } else {
-      console.log('value false')
-      this.validComp = false
     }
   }
 
