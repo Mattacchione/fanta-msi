@@ -71,7 +71,7 @@
     </h3>
     <div>
       <!-- <button mat-raised-button color="primary" (click)="verifyComp()">Verifica</button> -->
-      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()">Copia formazione</button>
+      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()" [disabled]="!validComp">Copia formazione</button>
     </div>
   </div>
 
