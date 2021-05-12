@@ -2,7 +2,7 @@
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .pool {
@@ -28,4 +28,16 @@
 
 .example-radio-button {
     margin: 5px;
+}
+
+.validation {
+    font-size: large;
+}
+
+.valid {
+    color: lightgreen;
+}
+
+.not-valid {
+    color: darkorange;
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <div>
+  <div class="title">
     <h1>FANTA MSI</h1>
   </div>
 
@@ -57,7 +57,7 @@
     <div>
       <label id="example-radio-group-label">Scegli il Coach</label>
       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="comp.coach">
-        <mat-radio-button class="example-radio-button" *ngFor="let coachOption of playerPoolTop" [value]="coachOption">
+        <mat-radio-button class="example-radio-button" *ngFor="let coachOption of playerPoolCoach" [value]="coachOption">
           {{coachOption.player}} - {{coachOption.team}} - {{coachOption.value}}
         </mat-radio-button>
       </mat-radio-group>
@@ -65,20 +65,18 @@
   </div>
 
   <div class="comp">
-    <span>La tua comp è:
-      <span id="copy-comp">{{comp.top?.player}} - {{comp.jungle?.player}} - {{comp.mid?.player}} - {{comp.adc?.player}} -
+    <h3>La tua comp è: {{comp.top?.player}} - {{comp.jungle?.player}} - {{comp.mid?.player}} - {{comp.adc?.player}} -
         {{comp.supp?.player}} -
-        {{comp.coach?.player}}</span>
-    </span>
+        {{comp.coach?.player}}
+    </h3>
     <div>
       <button mat-raised-button color="primary" (click)="verifyComp()">Verifica</button>
-      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()">Copia formazione</button>
+      <button mat-raised-button color="primary" [cdkCopyToClipboard]="copy()" [disabled]="validComp">Copia formazione</button>
     </div>
   </div>
 
 
-  <div>
-    La tua comp è {{valdiComp ? 'VALIDA' : 'NON VALIDA - controlla il valore totale dei giocatori, di non aver un solo
-    player per ruolo e di aver massimo 2 player per squadra '}}
+  <div class="validation" [ngClass]="validComp ? 'valid' : 'not-valid'">
+    La tua comp è {{validComp ? 'VALIDA' : 'NON VALIDA - controlla di non aver superato i crediti massimi e di non aver messo più di 2 player per squadra '}}
   </div>
 </div>

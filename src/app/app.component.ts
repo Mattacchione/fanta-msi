@@ -16,11 +16,11 @@ export class AppComponent {
 
   comp: any
 
-  valdiComp: boolean
+  validComp: boolean
 
   constructor() {
 
-    this.valdiComp = false
+    this.validComp = false
 
     this.comp = {
       top: {},
@@ -235,12 +235,12 @@ export class AppComponent {
     const adc = this.comp.adc?.value ? this.comp.adc?.value : 0
     const supp = this.comp.supp?.value ? this.comp.supp?.value : 0
     const coach = this.comp.coach?.value ? this.comp.coach?.value : 0
-    let value = 135 - top - jungle - mid - adc - supp -coach
+    let value = 135 - top - jungle - mid - adc - supp - coach
     return value
   }
 
   verifyComp() {
-    if (this.calculateCredit() <= 135) {
+    if (this.calculateCredit() <= 135 && this.calculateCredit() > 0) {
       let rng = 0, mad = 0, dw = 0, c9 = 0, psg = 0, pgg = 0
       for (const [key, value] of Object.entries(this.comp)) {
         if (key !== 'coach') {
@@ -267,13 +267,13 @@ export class AppComponent {
         }
       }
       if (rng > 2 || mad > 2 || dw > 2 || c9 > 2 || psg > 2 || pgg > 2) {
-        this.valdiComp = false
+        this.validComp = false
       } else {
-        this.valdiComp = true
+        this.validComp = true
       }
     } else {
       console.log('value false')
-      this.valdiComp = false
+      this.validComp = false
     }
   }
 
