@@ -199,7 +199,7 @@ export class AppComponent {
       },
       {
         player: 'kkOma',
-        team: 'C9',
+        team: 'DW',
         value: 30
       },
       {
