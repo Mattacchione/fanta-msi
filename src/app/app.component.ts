@@ -35,7 +35,7 @@ export class AppComponent {
       {
         player: 'Xiaohu',
         team: 'RNG',
-        value: 35
+        value: 40
       },
       {
         player: 'Armut',
@@ -45,29 +45,19 @@ export class AppComponent {
       {
         player: 'Khan',
         team: 'DW',
-        value: 25
-      },
-      {
-        player: 'Fudge',
-        team: 'C9',
         value: 20
       },
       {
         player: 'Hanabi',
         team: 'PSG',
-        value: 15
-      },
-      {
-        player: 'BioPhanter',
-        team: 'PGG',
         value: 10
-      },
+      }
     ]
     this.playerPoolJng = [
       {
         player: 'Wei',
         team: 'RNG',
-        value: 35
+        value: 40
       },
       {
         player: 'Elyoya',
@@ -75,105 +65,70 @@ export class AppComponent {
         value: 30
       },
       {
-        player: 'River',
-        team: 'PSG',
-        value: 25
-      },
-      {
         player: 'Canyon',
         team: 'DW',
         value: 20
       },
       {
-        player: 'Blaber',
-        team: 'C9',
-        value: 15
-      },
-      {
-        player: 'Pabu',
-        team: 'PGG',
+        player: 'River',
+        team: 'PSG',
         value: 10
-      },
+      }
     ]
     this.playerPoolMid = [
       {
-        player: 'Perkz',
-        team: 'C9',
-        value: 35
-      },
-      {
         player: 'Crylin',
         team: 'RNG',
+        value: 40
+      },
+      {
+        player: 'Humanoid',
+        team: 'MAD',
         value: 30
       },
       {
         player: 'Maple',
         team: 'PSG',
-        value: 25
-      },
-      {
-        player: 'Humanoid',
-        team: 'MAD',
         value: 20
       },
       {
         player: 'Showmaker',
         team: 'DW',
-        value: 15
-      },
-      {
-        player: 'Chazz',
-        team: 'PGG',
         value: 10
-      },
+      }
     ]
     this.playerPoolAdc = [
       {
-        player: 'GALA',
-        team: 'RNG',
-        value: 35
-      },
-      {
         player: 'Carzzy',
         team: 'MAD',
+        value: 40
+      },
+      {
+        player: 'GALA',
+        team: 'RNG',
         value: 30
       },
       {
         player: 'Ghost',
         team: 'DW',
-        value: 25
+        value: 20
       },
       {
         player: 'Doggo',
         team: 'PSG',
-        value: 20
-      },
-      {
-        player: 'Zven',
-        team: 'C9',
-        value: 15
-      },
-      {
-        player: 'Praedyth',
-        team: 'PGG',
         value: 10
-      },
+      }
     ]
     this.playerPoolSupp = [
       {
         player: 'Ming',
         team: 'RNG',
-        value: 35
+        value: 40
       },
       {
         player: 'Kaiser',
         team: 'MAD',
         value: 30
-      },
-      {
-        player: 'Vulcan',
-        team: 'C9',
-        value: 25
       },
       {
         player: 'Kaiwing',
@@ -183,45 +138,30 @@ export class AppComponent {
       {
         player: 'BeryL',
         team: 'DW',
-        value: 15
-      },
-      {
-        player: 'Decoy',
-        team: 'PGG',
         value: 10
-      },
+      }
     ]
     this.playerPoolCoach = [
       {
         player: 'Poppy',
         team: 'RNG',
-        value: 35
-      },
-      {
-        player: 'kkOma',
-        team: 'DW',
-        value: 30
+        value: 40
       },
       {
         player: 'Mac',
         team: 'MAD',
-        value: 25
+        value: 30
       },
       {
-        player: 'Reignover',
-        team: 'C9',
+        player: 'kkOma',
+        team: 'DW',
         value: 20
       },
       {
         player: 'Helper',
         team: 'PSG',
-        value: 15
-      },
-      {
-        player: 'Charlie',
-        team: 'RNG',
         value: 10
-      },
+      }
     ]
   }
 
@@ -239,13 +179,13 @@ export class AppComponent {
     const adc = this.comp.adc?.value ? this.comp.adc?.value : 0
     const supp = this.comp.supp?.value ? this.comp.supp?.value : 0
     const coach = this.comp.coach?.value ? this.comp.coach?.value : 0
-    let value = 135 - top - jungle - mid - adc - supp - coach
+    let value = 150 - top - jungle - mid - adc - supp - coach
     return value
   }
 
   verifyComp() {
     if (this.completedComp()) {
-      if (this.calculateCredit() <= 135 && this.calculateCredit() >= 0) {
+      if (this.calculateCredit() <= 150 && this.calculateCredit() >= 0) {
         let rng = 0, mad = 0, dw = 0, c9 = 0, psg = 0, pgg = 0
         for (const [key, value] of Object.entries(this.comp)) {
           if (key !== 'coach') {
@@ -271,7 +211,7 @@ export class AppComponent {
             }
           }
         }
-        if (rng > 2 || mad > 2 || dw > 2 || c9 > 2 || psg > 2 || pgg > 2) {
+        if (rng > 3 || mad > 3 || dw > 3 || c9 > 3 || psg > 3 || pgg > 3) {
           this.validComp = false
         } else {
           this.validComp = true
