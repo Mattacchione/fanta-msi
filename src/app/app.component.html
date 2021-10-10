@@ -7,6 +7,14 @@
     Una volta fatta la formazione inseritela qua: <a style="background-color: white;" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeQTpoa8LYHlBuGlDe5xB83mWKMb1XcR_uKhIqRJHlrxna6kw/viewform">WORLDS FORM</a> 
   </h3>
 
+  <div>
+    <h3>Regole</h3>
+    <ul>
+      <li>Massimo 1 giocatore per squadra, escluso il coach</li>
+      <li>Non si può superare il massimo di crediti per la formazione</li>
+    </ul>
+  </div>
+
   <div [ngClass]="calculateCredit() >= 0 ? 'valid' : 'not-valid'">
     <h2>Crediti disponibili {{calculateCredit()}}</h2>
   </div>
