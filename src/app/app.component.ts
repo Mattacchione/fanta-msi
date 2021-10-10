@@ -601,7 +601,7 @@ export class AppComponent {
             }
           }
         }
-        if (edg > 2 || dw > 2 || mad > 2 || psg > 2 || fpx > 2 || geng > 2 || fnc > 2 || hundred > 2 || rng > 2 || t1 > 2 || rge > 2 || tl > 2 || c9 > 2 || dfm > 2 || hle > 2 || lng > 2) {
+        if (edg > 1 || dw > 1 || mad > 1 || psg > 1 || fpx > 1 || geng > 1 || fnc > 1 || hundred > 1 || rng > 1 || t1 > 1 || rge > 1 || tl > 1 || c9 > 1 || dfm > 1 || hle > 1 || lng > 1) {
           this.validComp = false
         } else {
           this.validComp = true
