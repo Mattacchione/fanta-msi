@@ -33,133 +33,493 @@ export class AppComponent {
 
     this.playerPoolTop = [
       {
-        player: 'Xiaohu',
-        team: 'RNG',
+        player: 'Flandre',
+        team: 'EDG',
+        value: 40
+      },
+      {
+        player: 'Khan',
+        team: 'DW',
         value: 40
       },
       {
         player: 'Armut',
         team: 'MAD',
+        value: 40
+      },
+      {
+        player: 'Hanbi',
+        team: 'PSG',
+        value: 40
+      },
+      {
+        player: 'Nuguri',
+        team: 'FPX',
         value: 30
       },
       {
-        player: 'Khan',
-        team: 'DW',
+        player: 'Rascal',
+        team: 'GENG',
+        value: 30
+      },
+      {
+        player: 'Adam',
+        team: 'FNC',
+        value: 30
+      },
+      {
+        player: 'Ssumday',
+        team: '100T',
+        value: 30
+      },
+      {
+        player: 'Xiaohu',
+        team: 'RNG',
         value: 20
       },
       {
-        player: 'Hanabi',
-        team: 'PSG',
+        player: 'Canna',
+        team: 'T1',
+        value: 20
+      },
+      {
+        player: 'Odoamne',
+        team: 'RGE',
+        value: 20
+      },
+      {
+        player: 'Alphari',
+        team: 'TL',
+        value: 20
+      },
+      {
+        player: 'Fudge',
+        team: 'C9',
+        value: 10
+      },
+      {
+        player: 'Evi',
+        team: 'DFM',
+        value: 10
+      },
+      {
+        player: 'Morgan',
+        team: 'HLE',
+        value: 10
+      },
+      {
+        player: 'Ale',
+        team: 'LNG',
         value: 10
       }
     ]
     this.playerPoolJng = [
       {
-        player: 'Wei',
-        team: 'RNG',
+        player: 'Jiejie',
+        team: 'EDG',
+        value: 40
+      },
+      {
+        player: 'Canyon',
+        team: 'DW',
         value: 40
       },
       {
         player: 'Elyoya',
         team: 'MAD',
-        value: 30
-      },
-      {
-        player: 'Canyon',
-        team: 'DW',
-        value: 20
+        value: 40
       },
       {
         player: 'River',
         team: 'PSG',
+        value: 40
+      },
+      {
+        player: 'Tian',
+        team: 'FPX',
+        value: 30
+      },
+      {
+        player: 'Clid',
+        team: 'GENG',
+        value: 30
+      },
+      {
+        player: 'Bwipo',
+        team: 'FNC',
+        value: 30
+      },
+      {
+        player: 'Closer',
+        team: '100T',
+        value: 30
+      },
+      {
+        player: 'Wei',
+        team: 'RNG',
+        value: 20
+      },
+      {
+        player: 'Oner',
+        team: 'T1',
+        value: 20
+      },
+      {
+        player: 'Inspired',
+        team: 'RGE',
+        value: 20
+      },
+      {
+        player: 'Santorin',
+        team: 'TL',
+        value: 20
+      },
+      {
+        player: 'Blaber',
+        team: 'C9',
+        value: 10
+      },
+      {
+        player: 'Steal',
+        team: 'DFM',
+        value: 10
+      },
+      {
+        player: 'Willer',
+        team: 'HLE',
+        value: 10
+      },
+      {
+        player: 'Tarzan',
+        team: 'LNG',
         value: 10
       }
     ]
     this.playerPoolMid = [
       {
-        player: 'Crylin',
-        team: 'RNG',
+        player: 'Scout',
+        team: 'EDG',
+        value: 40
+      },
+      {
+        player: 'ShowMaker',
+        team: 'DW',
         value: 40
       },
       {
         player: 'Humanoid',
         team: 'MAD',
-        value: 30
+        value: 40
       },
       {
         player: 'Maple',
         team: 'PSG',
+        value: 40
+      },
+      {
+        player: 'Doinb',
+        team: 'FPX',
+        value: 30
+      },
+      {
+        player: 'Bdd',
+        team: 'GENG',
+        value: 30
+      },
+      {
+        player: 'Nisqy',
+        team: 'FNC',
+        value: 30
+      },
+      {
+        player: 'Abbedagge',
+        team: '100T',
+        value: 30
+      },
+      {
+        player: 'Cryin',
+        team: 'RNG',
         value: 20
       },
       {
-        player: 'Showmaker',
-        team: 'DW',
+        player: 'Faker',
+        team: 'T1',
+        value: 20
+      },
+      {
+        player: 'Larssen',
+        team: 'RGE',
+        value: 20
+      },
+      {
+        player: 'Jensen',
+        team: 'TL',
+        value: 20
+      },
+      {
+        player: 'Perkz',
+        team: 'C9',
+        value: 10
+      },
+      {
+        player: 'Aria',
+        team: 'DFM',
+        value: 10
+      },
+      {
+        player: 'Chovy',
+        team: 'HLE',
+        value: 10
+      },
+      {
+        player: 'icon',
+        team: 'LNG',
         value: 10
       }
     ]
     this.playerPoolAdc = [
+      {
+        player: 'Viper',
+        team: 'EDG',
+        value: 40
+      },
+      {
+        player: 'Ghost',
+        team: 'DW',
+        value: 40
+      },
       {
         player: 'Carzzy',
         team: 'MAD',
         value: 40
       },
       {
-        player: 'GALA',
-        team: 'RNG',
+        player: 'Unified',
+        team: 'PSG',
+        value: 40
+      },
+      {
+        player: 'Lwx',
+        team: 'FPX',
         value: 30
       },
       {
-        player: 'Ghost',
-        team: 'DW',
+        player: 'Ruler',
+        team: 'GENG',
+        value: 30
+      },
+      {
+        player: 'Upset',
+        team: 'FNC',
+        value: 30
+      },
+      {
+        player: 'FBI',
+        team: '100T',
+        value: 30
+      },
+      {
+        player: 'GALA',
+        team: 'RNG',
         value: 20
       },
       {
-        player: 'Doggo',
-        team: 'PSG',
+        player: 'Teddy',
+        team: 'T1',
+        value: 20
+      },
+      {
+        player: 'Hans sama',
+        team: 'RGE',
+        value: 20
+      },
+      {
+        player: 'Tactical',
+        team: 'TL',
+        value: 20
+      },
+      {
+        player: 'Zven',
+        team: 'C9',
+        value: 10
+      },
+      {
+        player: 'Yutapon',
+        team: 'DFM',
+        value: 10
+      },
+      {
+        player: 'Deft',
+        team: 'HLE',
+        value: 10
+      },
+      {
+        player: 'Light',
+        team: 'LNG',
         value: 10
       }
     ]
     this.playerPoolSupp = [
       {
-        player: 'Ming',
-        team: 'RNG',
+        player: 'Meiko',
+        team: 'EDG',
+        value: 40
+      },
+      {
+        player: 'BeryL',
+        team: 'DW',
         value: 40
       },
       {
         player: 'Kaiser',
         team: 'MAD',
-        value: 30
+        value: 40
       },
       {
         player: 'Kaiwing',
         team: 'PSG',
+        value: 40
+      },
+      {
+        player: 'Crisp',
+        team: 'FPX',
+        value: 30
+      },
+      {
+        player: 'Life',
+        team: 'GENG',
+        value: 30
+      },
+      {
+        player: 'Hylissang',
+        team: 'FNC',
+        value: 30
+      },
+      {
+        player: 'huhi',
+        team: '100T',
+        value: 30
+      },
+      {
+        player: 'Ming',
+        team: 'RNG',
         value: 20
       },
       {
-        player: 'BeryL',
-        team: 'DW',
+        player: 'Keria',
+        team: 'T1',
+        value: 20
+      },
+      {
+        player: 'Trymbi',
+        team: 'RGE',
+        value: 20
+      },
+      {
+        player: 'CoreJJ',
+        team: 'TL',
+        value: 20
+      },
+      {
+        player: 'Vulcan',
+        team: 'C9',
+        value: 10
+      },
+      {
+        player: 'Gaeng',
+        team: 'DFM',
+        value: 10
+      },
+      {
+        player: 'Vista',
+        team: 'HLE',
+        value: 10
+      },
+      {
+        player: 'Iwandy',
+        team: 'LNG',
         value: 10
       }
     ]
     this.playerPoolCoach = [
       {
-        player: 'Poppy',
-        team: 'RNG',
+        player: 'Maokai',
+        team: 'EDG',
+        value: 40
+      },
+      {
+        player: 'KkOma',
+        team: 'DW',
         value: 40
       },
       {
         player: 'Mac',
         team: 'MAD',
-        value: 30
-      },
-      {
-        player: 'kkOma',
-        team: 'DW',
-        value: 20
+        value: 40
       },
       {
         player: 'Helper',
         team: 'PSG',
+        value: 40
+      },
+      {
+        player: 'Steak',
+        team: 'FPX',
+        value: 30
+      },
+      {
+        player: 'oDin',
+        team: 'GENG',
+        value: 30
+      },
+      {
+        player: 'YamatoCannon',
+        team: 'FNC',
+        value: 30
+      },
+      {
+        player: 'Reapered',
+        team: '100T',
+        value: 30
+      },
+      {
+        player: 'Poppy',
+        team: 'RNG',
+        value: 20
+      },
+      {
+        player: 'Stardust',
+        team: 'T1',
+        value: 20
+      },
+      {
+        player: 'fredy122',
+        team: 'RGE',
+        value: 20
+      },
+      {
+        player: 'Kold',
+        team: 'TL',
+        value: 20
+      },
+      {
+        player: 'Mithy',
+        team: 'C9',
+        value: 10
+      },
+      {
+        player: 'Yang',
+        team: 'DFM',
+        value: 10
+      },
+      {
+        player: 'Kezman',
+        team: 'HLE',
+        value: 10
+      },
+      {
+        player: 'U',
+        team: 'LNG',
         value: 10
       }
     ]
@@ -186,32 +546,62 @@ export class AppComponent {
   verifyComp() {
     if (this.completedComp()) {
       if (this.calculateCredit() <= 150 && this.calculateCredit() >= 0) {
-        let rng = 0, mad = 0, dw = 0, c9 = 0, psg = 0, pgg = 0
+        let edg = 0, dw = 0, mad = 0, psg = 0, fpx = 0, geng = 0, fnc = 0, hundred = 0, rng = 0, t1 = 0, rge = 0, tl = 0, c9 = 0, dfm = 0, hle = 0, lng = 0
         for (const [key, value] of Object.entries(this.comp)) {
           if (key !== 'coach') {
             switch (value['team']) {
-              case 'RNG':
-                rng++
-                break;
-              case 'MAD':
-                mad++
+              case 'EDG':
+                edg++
                 break;
               case 'DW':
                 dw++
                 break;
-              case 'C9':
-                c9++
+              case 'MAD':
+                mad++
                 break;
               case 'PSG':
                 psg++
                 break;
-              case 'PGG':
-                pgg++
+              case 'FPX':
+                fpx++
+                break;
+              case 'GENG':
+                geng++
+                break;
+              case 'FNC':
+                fnc++
+                break;
+              case '100T':
+                hundred++
+                break;
+              case 'RNG':
+                rng++
+                break;
+              case 'T1':
+                t1++
+                break;
+              case 'RGE':
+                rge++
+                break;
+              case 'TL':
+                tl++
+                break;
+              case 'C9':
+                c9++
+                break;
+              case 'DFM':
+                dfm++
+                break;
+              case 'HLE':
+                hle++
+                break;
+              case 'LNG':
+                lng++
                 break;
             }
           }
         }
-        if (rng > 3 || mad > 3 || dw > 3 || c9 > 3 || psg > 3 || pgg > 3) {
+        if (edg > 2 || dw > 2 || mad > 2 || psg > 2 || fpx > 2 || geng > 2 || fnc > 2 || hundred > 2 || rng > 2 || t1 > 2 || rge > 2 || tl > 2 || c9 > 2 || dfm > 2 || hle > 2 || lng > 2) {
           this.validComp = false
         } else {
           this.validComp = true
