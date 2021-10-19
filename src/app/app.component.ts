@@ -238,7 +238,7 @@ export class AppComponent {
       {
         player: 'Vista',
         team: 'HLE',
-        value: 15
+        value: 40
       }
     ]
     this.playerPoolCoach = [
