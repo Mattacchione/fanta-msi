@@ -22,148 +22,74 @@ export class AppComponent {
     {
       "player": "Breathe",
       "team": "RNG",
-      "value": 30,
+      "value": 40,
       "role": "top"
     },
     {
       "player": "Wei",
       "team": "RNG",
-      "value": 30,
+      "value": 40,
       "role": "jungle"
     },
     {
       "player": "Xiaohu",
       "team": "RNG",
-      "value": 30,
+      "value": 40,
       "role": "mid"
     },
     {
       "player": "GALA",
       "team": "RNG",
-      "value": 30,
+      "value": 40,
       "role": "adc"
     },
     {
       "player": "Ming",
       "team": "RNG",
-      "value": 30,
+      "value": 40,
       "role": "supp"
     },
     {
       "player": "KenZhu",
       "team": "RNG",
-      "value": 30,
+      "value": 40,
       "role": "coach"
     },
     null,
     {
       "player": "Kingen",
       "team": "DRX",
-      "value": 30,
+      "value": 40,
       "role": "top"
     },
     {
       "player": "Pyosik",
       "team": "DRX",
-      "value": 30,
+      "value": 40,
       "role": "jungle"
     },
     {
       "player": "Zeka",
       "team": "DRX",
-      "value": 30,
+      "value": 40,
       "role": "mid"
     },
     {
       "player": "Deft",
       "team": "DRX",
-      "value": 30,
+      "value": 40,
       "role": "adc"
     },
     {
       "player": "BeryL",
       "team": "DRX",
-      "value": 30,
+      "value": 40,
       "role": "supp"
     },
     {
       "player": "Mowgli",
       "team": "DRX",
-      "value": 30,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Wunder",
-      "team": "FNC",
-      "value": 30,
-      "role": "top"
-    },
-    {
-      "player": "Razork",
-      "team": "FNC",
-      "value": 30,
-      "role": "jungle"
-    },
-    {
-      "player": "Humanoid",
-      "team": "FNC",
-      "value": 30,
-      "role": "mid"
-    },
-    {
-      "player": "Upset",
-      "team": "FNC",
-      "value": 30,
-      "role": "adc"
-    },
-    {
-      "player": "Hylissang",
-      "team": "FNC",
-      "value": 30,
-      "role": "supp"
-    },
-    {
-      "player": "YamatoCannon",
-      "team": "FNC",
-      "value": 30,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Impact",
-      "team": "EG",
-      "value": 20,
-      "role": "top"
-    },
-    {
-      "player": "Inspired",
-      "team": "EG",
-      "value": 20,
-      "role": "jungle"
-    },
-    {
-      "player": "jojopyun",
-      "team": "EG",
-      "value": 20,
-      "role": "mid"
-    },
-    {
-      "player": "Kaori",
-      "team": "EG",
-      "value": 20,
-      "role": "adc"
-    },
-    {
-      "player": "Vulcan",
-      "team": "EG",
-      "value": 20,
-      "role": "supp"
-    },
-    {
-      "player": "Rigby",
-      "team": "EG",
-      "value": 20,
+      "value": 40,
       "role": "coach"
     },
     null,
@@ -244,259 +170,109 @@ export class AppComponent {
     {
       "player": "Odoamne",
       "team": "RGE",
-      "value": 50,
+      "value": 40,
       "role": "top"
     },
     {
       "player": "Malrang",
       "team": "RGE",
-      "value": 50,
+      "value": 40,
       "role": "jungle"
     },
     {
       "player": "Larssen",
       "team": "RGE",
-      "value": 50,
+      "value": 40,
       "role": "mid"
     },
     {
       "player": "Comp",
       "team": "RGE",
-      "value": 50,
+      "value": 40,
       "role": "adc"
     },
     {
       "player": "Trymbi",
       "team": "RGE",
-      "value": 50,
+      "value": 40,
       "role": "supp"
     },
     {
       "player": "fredy122",
       "team": "RGE",
-      "value": 50,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Fudge",
-      "team": "C9",
-      "value": 50,
-      "role": "top"
-    },
-    {
-      "player": "Blaber",
-      "team": "C9",
-      "value": 50,
-      "role": "jungle"
-    },
-    {
-      "player": "Jensen",
-      "team": "C9",
-      "value": 50,
-      "role": "mid"
-    },
-    {
-      "player": "Berserker",
-      "team": "C9",
-      "value": 50,
-      "role": "adc"
-    },
-    {
-      "player": "Zven",
-      "team": "C9",
-      "value": 50,
-      "role": "supp"
-    },
-    {
-      "player": "Max Waldo",
-      "team": "C9",
-      "value": 50,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Wayward",
-      "team": "TES",
-      "value": 40,
-      "role": "top"
-    },
-    {
-      "player": "Tian",
-      "team": "TES",
-      "value": 40,
-      "role": "jungle"
-    },
-    {
-      "player": "knight",
-      "team": "TES",
-      "value": 40,
-      "role": "mid"
-    },
-    {
-      "player": "JackeyLove",
-      "team": "TES",
-      "value": 40,
-      "role": "adc"
-    },
-    {
-      "player": "Mark",
-      "team": "TES",
-      "value": 40,
-      "role": "supp"
-    },
-    {
-      "player": "Crescent",
-      "team": "TES",
       "value": 40,
       "role": "coach"
     },
-    null,
     {
       "player": "Zeus",
       "team": "T1",
-      "value": 40,
+      "value": 50,
       "role": "top"
     },
     {
       "player": "Oner",
       "team": "T1",
-      "value": 40,
+      "value": 50,
       "role": "jungle"
     },
     {
       "player": "Faker",
       "team": "T1",
-      "value": 40,
+      "value": 50,
       "role": "mid"
     },
     {
       "player": "Gumayusi",
       "team": "T1",
-      "value": 40,
+      "value": 50,
       "role": "adc"
     },
     {
       "player": "Keria",
       "team": "T1",
-      "value": 40,
+      "value": 50,
       "role": "supp"
     },
     {
       "player": "Bengi",
       "team": "T1",
-      "value": 40,
+      "value": 50,
       "role": "coach"
     },
-    null,
-    {
-      "player": "BrokenBlade",
-      "team": "G2",
-      "value": 40,
-      "role": "top"
-    },
-    {
-      "player": "Jankos",
-      "team": "G2",
-      "value": 40,
-      "role": "jungle"
-    },
-    {
-      "player": "caPs",
-      "team": "G2",
-      "value": 40,
-      "role": "mid"
-    },
-    {
-      "player": "Flakked",
-      "team": "G2",
-      "value": 40,
-      "role": "adc"
-    },
-    {
-      "player": "Targamas",
-      "team": "G2",
-      "value": 40,
-      "role": "supp"
-    },
-    {
-      "player": "Dylan Falco",
-      "team": "G2",
-      "value": 40,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Rest",
-      "team": "CFO",
-      "value": 20,
-      "role": "top"
-    },
-    {
-      "player": "Gemini",
-      "team": "CFO",
-      "value": 20,
-      "role": "jungle"
-    },
-    {
-      "player": "Mission",
-      "team": "CFO",
-      "value": 20,
-      "role": "mid"
-    },
-    {
-      "player": "Shunn",
-      "team": "CFO",
-      "value": 20,
-      "role": "adc"
-    },
-    {
-      "player": "Koala",
-      "team": "CFO",
-      "value": 20,
-      "role": "supp"
-    },
-    {
-      "player": "Achie",
-      "team": "CFO",
-      "value": 20,
-      "role": "coach"
-    },
-    null,
     {
       "player": "Flandre",
       "team": "EDG",
-      "value": 40,
+      "value": 50,
       "role": "top"
     },
     {
       "player": "JunJia - Jiejie",
       "team": "EDG",
-      "value": 40,
+      "value": 50,
       "role": "jungle"
     },
     {
       "player": "Scout",
       "team": "EDG",
-      "value": 40,
+      "value": 50,
       "role": "mid"
     },
     {
       "player": "Viper",
       "team": "EDG",
-      "value": 40,
+      "value": 50,
       "role": "adc"
     },
     {
       "player": "Meiko",
       "team": "EDG",
-      "value": 40,
+      "value": 50,
       "role": "supp"
     },
     {
       "player": "Maokai",
       "team": "EDG",
-      "value": 40,
+      "value": 50,
       "role": "coach"
     },
     null,
@@ -534,80 +310,6 @@ export class AppComponent {
       "player": "Daeny",
       "team": "DWG",
       "value": 40,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Ssumday",
-      "team": "100T",
-      "value": 20,
-      "role": "top"
-    },
-    {
-      "player": "Closer",
-      "team": "100T",
-      "value": 20,
-      "role": "jungle"
-    },
-    {
-      "player": "Abbedagge",
-      "team": "100T",
-      "value": 20,
-      "role": "mid"
-    },
-    {
-      "player": "FBI",
-      "team": "100T",
-      "value": 20,
-      "role": "adc"
-    },
-    {
-      "player": "huhi",
-      "team": "100T",
-      "value": 20,
-      "role": "supp"
-    },
-    {
-      "player": "Reapered",
-      "team": "100T",
-      "value": 20,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Kiaya",
-      "team": "GAM",
-      "value": 20,
-      "role": "top"
-    },
-    {
-      "player": "Levi",
-      "team": "GAM",
-      "value": 20,
-      "role": "jungle"
-    },
-    {
-      "player": "Kati",
-      "team": "GAM",
-      "value": 20,
-      "role": "mid"
-    },
-    {
-      "player": "Sty1e",
-      "team": "GAM",
-      "value": 20,
-      "role": "adc"
-    },
-    {
-      "player": "Bie",
-      "team": "GAM",
-      "value": 20,
-      "role": "supp"
-    },
-    {
-      "player": "JackieWind",
-      "team": "GAM",
-      "value": 20,
       "role": "coach"
     }
   ]
@@ -689,13 +391,13 @@ export class AppComponent {
     const adc = this.comp.adc?.value ? this.comp.adc?.value : 0
     const supp = this.comp.supp?.value ? this.comp.supp?.value : 0
     const coach = this.comp.coach?.value ? this.comp.coach?.value : 0
-    let value = 220 - top - jungle - mid - adc - supp - coach
+    let value = 270 - top - jungle - mid - adc - supp - coach
     return value
   }
 
   verifyComp() {
     if (this.completedComp()) {
-      if (this.calculateCredit() <= 220 && this.calculateCredit() >= 0) {
+      if (this.calculateCredit() <= 270 && this.calculateCredit() >= 0) {
         let edg = 0, dw = 0, mad = 0, psg = 0, fpx = 0, geng = 0, fnc = 0, hundred = 0, rng = 0, t1 = 0, rge = 0, tl = 0, c9 = 0, dfm = 0,
           hle = 0, lng = 0, drx = 0, byg = 0, eg = 0, sgb = 0, chf = 0, iw = 0, isg = 0, lll = 0, jdg = 0, tes = 0, g2 = 0, dwg = 0, t100 = 0, gam = 0, cfo = 0
         for (const [key, value] of Object.entries(this.comp)) {
