@@ -20,43 +20,6 @@ export class AppComponent {
 
   pool = [
     {
-      "player": "Breathe",
-      "team": "RNG",
-      "value": 40,
-      "role": "top"
-    },
-    {
-      "player": "Wei",
-      "team": "RNG",
-      "value": 40,
-      "role": "jungle"
-    },
-    {
-      "player": "Xiaohu",
-      "team": "RNG",
-      "value": 40,
-      "role": "mid"
-    },
-    {
-      "player": "GALA",
-      "team": "RNG",
-      "value": 40,
-      "role": "adc"
-    },
-    {
-      "player": "Ming",
-      "team": "RNG",
-      "value": 40,
-      "role": "supp"
-    },
-    {
-      "player": "KenZhu",
-      "team": "RNG",
-      "value": 40,
-      "role": "coach"
-    },
-    null,
-    {
       "player": "Kingen",
       "team": "DRX",
       "value": 40,
@@ -166,43 +129,6 @@ export class AppComponent {
       "value": 50,
       "role": "coach"
     },
-    null,
-    {
-      "player": "Odoamne",
-      "team": "RGE",
-      "value": 40,
-      "role": "top"
-    },
-    {
-      "player": "Malrang",
-      "team": "RGE",
-      "value": 40,
-      "role": "jungle"
-    },
-    {
-      "player": "Larssen",
-      "team": "RGE",
-      "value": 40,
-      "role": "mid"
-    },
-    {
-      "player": "Comp",
-      "team": "RGE",
-      "value": 40,
-      "role": "adc"
-    },
-    {
-      "player": "Trymbi",
-      "team": "RGE",
-      "value": 40,
-      "role": "supp"
-    },
-    {
-      "player": "fredy122",
-      "team": "RGE",
-      "value": 40,
-      "role": "coach"
-    },
     {
       "player": "Zeus",
       "team": "T1",
@@ -237,79 +163,6 @@ export class AppComponent {
       "player": "Bengi",
       "team": "T1",
       "value": 50,
-      "role": "coach"
-    },
-    {
-      "player": "Flandre",
-      "team": "EDG",
-      "value": 50,
-      "role": "top"
-    },
-    {
-      "player": "JunJia - Jiejie",
-      "team": "EDG",
-      "value": 50,
-      "role": "jungle"
-    },
-    {
-      "player": "Scout",
-      "team": "EDG",
-      "value": 50,
-      "role": "mid"
-    },
-    {
-      "player": "Viper",
-      "team": "EDG",
-      "value": 50,
-      "role": "adc"
-    },
-    {
-      "player": "Meiko",
-      "team": "EDG",
-      "value": 50,
-      "role": "supp"
-    },
-    {
-      "player": "Maokai",
-      "team": "EDG",
-      "value": 50,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Nuguri - Burdol",
-      "team": "DWG",
-      "value": 40,
-      "role": "top"
-    },
-    {
-      "player": "Canyon",
-      "team": "DWG",
-      "value": 40,
-      "role": "jungle"
-    },
-    {
-      "player": "ShowMaker",
-      "team": "DWG",
-      "value": 40,
-      "role": "mid"
-    },
-    {
-      "player": "deokdam",
-      "team": "DWG",
-      "value": 40,
-      "role": "adc"
-    },
-    {
-      "player": "Kellin",
-      "team": "DWG",
-      "value": 40,
-      "role": "supp"
-    },
-    {
-      "player": "Daeny",
-      "team": "DWG",
-      "value": 40,
       "role": "coach"
     }
   ]
@@ -391,13 +244,13 @@ export class AppComponent {
     const adc = this.comp.adc?.value ? this.comp.adc?.value : 0
     const supp = this.comp.supp?.value ? this.comp.supp?.value : 0
     const coach = this.comp.coach?.value ? this.comp.coach?.value : 0
-    let value = 270 - top - jungle - mid - adc - supp - coach
+    let value = 300 - top - jungle - mid - adc - supp - coach
     return value
   }
 
   verifyComp() {
     if (this.completedComp()) {
-      if (this.calculateCredit() <= 270 && this.calculateCredit() >= 0) {
+      if (this.calculateCredit() <= 300 && this.calculateCredit() >= 0) {
         let edg = 0, dw = 0, mad = 0, psg = 0, fpx = 0, geng = 0, fnc = 0, hundred = 0, rng = 0, t1 = 0, rge = 0, tl = 0, c9 = 0, dfm = 0,
           hle = 0, lng = 0, drx = 0, byg = 0, eg = 0, sgb = 0, chf = 0, iw = 0, isg = 0, lll = 0, jdg = 0, tes = 0, g2 = 0, dwg = 0, t100 = 0, gam = 0, cfo = 0
         for (const [key, value] of Object.entries(this.comp)) {
@@ -502,7 +355,7 @@ export class AppComponent {
             }
           }
         }
-        if (edg > 2 || dw > 2 || mad > 2 || psg > 2 || fpx > 2 || geng > 2 || fnc > 2 || hundred > 2 || rng > 2 || t1 > 2 || rge > 2 || tl > 2 || c9 > 2 || dfm > 2 || hle > 2 || lng > 2 || drx > 2 || byg > 2 || eg > 2 || sgb > 2 || chf > 2 || iw > 2 || isg > 2 || lll > 2 || jdg > 2 || tes > 2 || g2 > 2 || dwg > 2 || t100 > 2 || gam > 2 || cfo > 2) {
+        if (edg > 3 || dw > 3 || mad > 3 || psg > 3 || fpx > 3 || geng > 3 || fnc > 3 || hundred > 3 || rng > 3 || t1 > 3 || rge > 3 || tl > 3 || c9 > 3 || dfm > 3 || hle > 3 || lng > 3 || drx > 3 || byg > 3 || eg > 3 || sgb > 3 || chf > 3 || iw > 3 || isg > 3 || lll > 3 || jdg > 3 || tes > 3 || g2 > 3 || dwg > 3 || t100 > 3 || gam > 3 || cfo > 3) {
           this.validComp = false
         } else {
           this.validComp = true
