@@ -22,110 +22,36 @@ export class AppComponent {
     {
       "player": "Kingen",
       "team": "DRX",
-      "value": 40,
+      "value": 50,
       "role": "top"
     },
     {
       "player": "Pyosik",
       "team": "DRX",
-      "value": 40,
+      "value": 50,
       "role": "jungle"
     },
     {
       "player": "Zeka",
       "team": "DRX",
-      "value": 40,
+      "value": 50,
       "role": "mid"
     },
     {
       "player": "Deft",
       "team": "DRX",
-      "value": 40,
+      "value": 50,
       "role": "adc"
     },
     {
       "player": "BeryL",
       "team": "DRX",
-      "value": 40,
+      "value": 50,
       "role": "supp"
     },
     {
       "player": "Mowgli",
       "team": "DRX",
-      "value": 40,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": 369,
-      "team": "JDG",
-      "value": 50,
-      "role": "top"
-    },
-    {
-      "player": "Kanavi",
-      "team": "JDG",
-      "value": 50,
-      "role": "jungle"
-    },
-    {
-      "player": "Yagao",
-      "team": "JDG",
-      "value": 50,
-      "role": "mid"
-    },
-    {
-      "player": "Hope",
-      "team": "JDG",
-      "value": 50,
-      "role": "adc"
-    },
-    {
-      "player": "Missing",
-      "team": "JDG",
-      "value": 50,
-      "role": "supp"
-    },
-    {
-      "player": "Homme",
-      "team": "JDG",
-      "value": 50,
-      "role": "coach"
-    },
-    null,
-    {
-      "player": "Doran",
-      "team": "GENG",
-      "value": 50,
-      "role": "top"
-    },
-    {
-      "player": "Peanut",
-      "team": "GENG",
-      "value": 50,
-      "role": "jungle"
-    },
-    {
-      "player": "Chovy",
-      "team": "GENG",
-      "value": 50,
-      "role": "mid"
-    },
-    {
-      "player": "Ruler",
-      "team": "GENG",
-      "value": 50,
-      "role": "adc"
-    },
-    {
-      "player": "Lehends",
-      "team": "GENG",
-      "value": 50,
-      "role": "supp"
-    },
-    {
-      "player": "Score",
-      "team": "GENG",
       "value": 50,
       "role": "coach"
     },
